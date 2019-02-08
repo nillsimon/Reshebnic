@@ -48,8 +48,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="30sp"
             android:gravity="center"
-            android:background="@color/colorAccent"
-            android:text="@string/block"
+            android:background="@drawable/olives"
             android:layout_width="match_parent"
             android:layout_height="220dp" />
 

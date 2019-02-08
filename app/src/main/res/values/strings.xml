@@ -12,6 +12,8 @@
     <string name="autch">Регистрация</string>
     <string name="blocked">11.09.2019</string>
     <string name="settings">Меню настроек</string>
+    <string name="search_decision">Поиск решебника</string>
+    <string name="chosen_decision">Избраное</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
