@@ -2,18 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
-
+    <item android:title="@string/general_menu">
+        <menu>
             <item
-                android:id="@+id/nav_search"
+                android:id="@+id/recycler"
+                android:icon="@drawable/ic_menu_share"
                 android:title="@string/search_decision" />
             <item
-                android:id="@+id/nav_settings"
-                android:title="@string/settings" />
-
-            <item
                 android:id="@+id/nav_send_A10"
-                android:title="Алгебра 10 класс" />
-
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/settings" />
+        </menu>
+    </item>
 
 </menu>

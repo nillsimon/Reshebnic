@@ -6,8 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
+    <TextView
+        android:id="@+id/search_list"
+        android:textSize="40sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/search_decision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
 <android.support.v7.widget.RecyclerView
-    android:id="@+id/search_book"
+    android:id="@+id/recycler_book"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 </android.support.v7.widget.RecyclerView>

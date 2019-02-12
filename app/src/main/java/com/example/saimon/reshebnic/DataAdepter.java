@@ -23,7 +23,7 @@ public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
     @NonNull
     @Override
     public DataAdepter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
-        View view = (View) inflater.inflate(R.layout.book_layout, parent, false);
+        View view = inflater.inflate(R.layout.book_layout, parent, false);
         return new ViewHolder(view);
     }
 
@@ -41,13 +41,13 @@ public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
         return books.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+     class ViewHolder extends RecyclerView.ViewHolder {
         final TextView nameBook;
         final  TextView authorBook;
         final  TextView yearOfPrinting;
         final ImageView image;
 
-        public ViewHolder(@NonNull View view) {
+         ViewHolder(@NonNull View view) {
             super(view);
             nameBook = view.findViewWithTag(R.id.title_book);
             authorBook = view.findViewById(R.id.old_book);
