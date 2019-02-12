@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class BookFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -17,8 +17,9 @@ public class BookFragment extends Fragment {
 
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_book, container, false);
+        return inflater.inflate(R.layout.activity_search, container, false);
     }
+
 
 
 }
@@ -33,7 +34,7 @@ public class BookFragment extends Fragment {
 //
 //    private OnFragmentInteractionListener mListener;
 //
-//    public BookFragment() {
+//    public SearchFragment() {
 //        // Required empty public constructor
 //    }
 //
@@ -43,11 +44,11 @@ public class BookFragment extends Fragment {
 //     *
 //     * @param param1 Parameter 1.
 //     * @param param2 Parameter 2.
-//     * @return A new instance of fragment BookFragment.
+//     * @return A new instance of fragment SearchFragment.
 //     */
 //    // TODO: Rename and change types and number of parameters
-//    public static BookFragment newInstance(String param1, String param2) {
-//        BookFragment fragment = new BookFragment();
+//    public static SearchFragment newInstance(String param1, String param2) {
+//        SearchFragment fragment = new SearchFragment();
 //        Bundle args = new Bundle();
 //        args.putString(ARG_PARAM1, param1);
 //        args.putString(ARG_PARAM2, param2);
