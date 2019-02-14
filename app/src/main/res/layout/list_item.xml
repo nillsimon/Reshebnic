@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <ImageView
+        android:id="@+id/image_book"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="80dp"
+        android:layout_height="130dp" />
+
+
+    <TextView
+        android:id="@+id/name_book"
+        android:layout_width="155dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Название"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/title_book"
+        app:layout_constraintStart_toEndOf="@+id/image_book"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_book"
+        android:layout_width="155dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Второе название"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_book"
+        app:layout_constraintTop_toBottomOf="@+id/name_book" />
+
+    <TextView
+        android:id="@+id/old_book"
+        android:layout_width="41dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Год"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/publishing_field" />
+
+    <TextView
+        android:id="@+id/publishing_field"
+        android:layout_width="157dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Издательство"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/image_book"
+        app:layout_constraintTop_toBottomOf="@+id/author_book" />
+
+    <TextView
+        android:id="@+id/description_field"
+        android:layout_width="155dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Описание"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/author_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_book"
+        app:layout_constraintTop_toBottomOf="@+id/title_book" />
+
+    <TextView
+        android:id="@+id/level_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Уровень"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/old_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toEndOf="@+id/title_book"
+        app:layout_constraintTop_toBottomOf="@+id/m_class_field"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/author_book"
+        android:layout_width="67dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Автор"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/publishing_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/image_book"
+        app:layout_constraintTop_toBottomOf="@+id/description_field" />
+
+    <TextView
+        android:id="@+id/m_class_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Класс"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/level_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toEndOf="@+id/name_book"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_star_border_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/old_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/description_field"
+        app:layout_constraintTop_toBottomOf="@+id/level_field" />
+
+
+</android.support.constraint.ConstraintLayout>

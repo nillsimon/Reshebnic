@@ -19,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        }, 1 * 1000);
+        }, 1 * 500);
 
 
     }

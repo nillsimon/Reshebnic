@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
+ class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
 
     private LayoutInflater inflater;
     private List<Book> books;
@@ -23,7 +23,7 @@ public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
     @NonNull
     @Override
     public DataAdepter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int position) {
-        View view = (View) inflater.inflate(R.layout.book_layout, parent, false);
+        View view = (View) inflater.inflate(R.layout.list_item, parent, false);
         return new ViewHolder(view);
     }
 
@@ -31,8 +31,13 @@ public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
     public void onBindViewHolder(@NonNull DataAdepter.ViewHolder holder, int position) {
         Book book = books.get(position);
         holder.nameBook.setText(book.getNameBook());
+        holder.titleBook.setText(book.getTitleBook());
         holder.authorBook.setText(book.getAuthorBook());
+        holder.descriptionField.setText(book.getDescription());
         holder.yearOfPrinting.setText(book.getYearOfPrinting());
+        holder.levelField.setText(book.getLevel());
+        holder.publishingField.setText(book.getPublishing());
+        holder.m_classField.setText((book.getM_class()));
         holder.image.setImageResource(book.getImage());
     }
 
@@ -42,16 +47,26 @@ public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        final TextView nameBook;
+        final  TextView nameBook;
+        final TextView titleBook;
         final  TextView authorBook;
+        final TextView descriptionField;
         final  TextView yearOfPrinting;
+        final TextView levelField;
+        final TextView publishingField;
+        final TextView m_classField;
         final ImageView image;
 
         public ViewHolder(@NonNull View view) {
             super(view);
-            nameBook = view.findViewWithTag(R.id.title_book);
-            authorBook = view.findViewById(R.id.old_book);
-            yearOfPrinting = view.findViewById(R.id.author_book);
+            nameBook = view.findViewById(R.id.name_book);
+            titleBook = view.findViewById(R.id.title_book);
+            authorBook = view.findViewById(R.id.author_book);
+            yearOfPrinting = view.findViewById(R.id.old_book);
+            descriptionField = view.findViewById(R.id.description_field);
+            levelField = view.findViewById(R.id.level_field);
+            publishingField = view.findViewById(R.id.publishing_field);
+            m_classField = view.findViewById(R.id.m_class_field);
             image = view.findViewById(R.id.image_book);
         }
     }

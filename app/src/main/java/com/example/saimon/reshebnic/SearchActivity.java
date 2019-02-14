@@ -26,18 +26,19 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     private void setInitialData() {
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.algebra));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.lgebra11));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
-        books.add(new Book("Геометрия", "Петровский А.В.", "2016 год", R.drawable.russian_kinguage_8));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
+        books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.drawable.algebra));
 
     }
 }
