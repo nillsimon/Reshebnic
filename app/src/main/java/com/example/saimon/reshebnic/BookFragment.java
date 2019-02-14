@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class BookFragment extends Fragment {
-
+    private int workoutId;
+    public static BookFragment newInstance() {
+        return new BookFragment();
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -20,7 +23,9 @@ public class BookFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_book, container, false);
     }
 
-
+    public void setWorkout(int id) {
+        this.workoutId = id;
+    }
 }
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

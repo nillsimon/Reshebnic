@@ -7,6 +7,11 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="usual_display"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list_book"
