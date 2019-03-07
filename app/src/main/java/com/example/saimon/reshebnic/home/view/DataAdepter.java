@@ -1,4 +1,4 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.home.view;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,13 +9,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.saimon.reshebnic.R;
+import com.example.saimon.reshebnic.home.model.Book;
+
 import java.util.List;
 
- class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
+ public class DataAdepter extends RecyclerView.Adapter<DataAdepter.ViewHolder>{
 
     private LayoutInflater inflater;
     private List<Book> books;
-    DataAdepter(Context context, List<Book> books){
+    public DataAdepter(Context context, List<Book> books){
         this.books = books;
         this.inflater = LayoutInflater.from(context);
     }

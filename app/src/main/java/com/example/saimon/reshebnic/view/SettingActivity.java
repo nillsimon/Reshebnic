@@ -1,4 +1,4 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.view;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -1,9 +1,12 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.view;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.saimon.reshebnic.R;
+import com.example.saimon.reshebnic.home.view.MainActivity;
 
 public class HomeActivity extends AppCompatActivity {
 

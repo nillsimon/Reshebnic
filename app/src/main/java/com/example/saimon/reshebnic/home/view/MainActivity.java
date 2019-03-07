@@ -1,15 +1,11 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.home.view;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -18,6 +14,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.saimon.reshebnic.R;
+import com.example.saimon.reshebnic.home.model.Book;
+import com.example.saimon.reshebnic.view.BookActivity;
+import com.example.saimon.reshebnic.view.BookFragment;
+import com.example.saimon.reshebnic.view.SearchActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -156,14 +158,14 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_search) {
-                Intent i = new Intent(MainActivity.this,SearchActivity.class);
+                Intent i = new Intent(MainActivity.this, SearchActivity.class);
                 startActivity(i);
         }else if (id == R.id.nav_settings) {
             FragmentTransaction fr = getSupportFragmentManager().beginTransaction();
             fr.replace(R.id.fMain,new BookFragment());
             fr.commit();
         } else if (id == R.id.nav_send_A10) {
-            Intent i = new Intent(MainActivity.this,BookActivity.class);
+            Intent i = new Intent(MainActivity.this, BookActivity.class);
             startActivity(i);
         }
 

@@ -1,7 +1,9 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.saimon.reshebnic.R;
 
 public class BookActivity extends AppCompatActivity {
 

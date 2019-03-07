@@ -1,8 +1,12 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+
+import com.example.saimon.reshebnic.R;
+import com.example.saimon.reshebnic.home.view.DataAdepter;
+import com.example.saimon.reshebnic.home.model.Book;
 
 import java.util.ArrayList;
 import java.util.List;

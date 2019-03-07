@@ -1,4 +1,4 @@
-package com.example.saimon.reshebnic;
+package com.example.saimon.reshebnic.home.model;
 
 
 public class Book {
