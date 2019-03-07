@@ -14,7 +14,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:src="@drawable/algebra"
+                android:src="@mipmap/algebra"
                 android:layout_width="100dp"
                 android:layout_height="130dp" />
 
