@@ -20,6 +20,7 @@ import com.example.saimon.reshebnic.home.model.Book;
 import com.example.saimon.reshebnic.view.BookActivity;
 import com.example.saimon.reshebnic.view.BookFragment;
 import com.example.saimon.reshebnic.view.SearchActivity;
+import com.example.saimon.reshebnic.view.SettingActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,23 +81,15 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.nav_setting_app) {
+            Intent i = new Intent(MainActivity.this, SettingActivity.class);
+            startActivity(i);
         }
-
         return super.onOptionsItemSelected(item);
-
     }
 
     private void setInitialData() {
-
-
         books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.mipmap.algebra));
         books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.mipmap.fisika_9));
         books.add(new Book("Algebra", "the beginning of the analysis", "Decision", "Peterson", "2016", "Advanced", "SousPrinting", "5 класс", R.mipmap.lgebra11));
@@ -166,6 +159,9 @@ public class MainActivity extends AppCompatActivity
             fr.commit();
         } else if (id == R.id.nav_send_A10) {
             Intent i = new Intent(MainActivity.this, BookActivity.class);
+            startActivity(i);
+        } else if (id == R.id.nav_setting_app) {
+            Intent i = new Intent(MainActivity.this, SettingActivity.class);
             startActivity(i);
         }
 

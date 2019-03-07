@@ -12,6 +12,7 @@
     <string name="autch">Регистрация</string>
     <string name="blocked">11.09.2019</string>
     <string name="settings">Меню настроек</string>
+    <string name="setting_app">Настройки приложения</string>
     <string name="search_decision">Поиск решебника</string>
     <string name="chosen_decision">Избраное</string>
 

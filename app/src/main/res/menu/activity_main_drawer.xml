@@ -15,5 +15,10 @@
                 android:id="@+id/nav_send_A10"
                 android:title="Алгебра 10 класс" />
 
+             <item
+                android:id="@+id/nav_setting_app"
+                android:title="@string/setting_app" />
+
+
 
 </menu>
